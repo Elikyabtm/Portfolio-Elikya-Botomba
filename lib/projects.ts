@@ -168,6 +168,47 @@ export const projects: Project[] = [
     thumbnailColor: "#E60000",
     video: "/videos/explicative.mp4",
   },
+    {
+  id: "10",
+title: "Série Brutaliste – Œuvres de Georges de La Tour",
+  category: "visuals",
+  year: "2024",
+  role: "Graphiste",
+  tools: ["Illustrator", "Photoshop"],
+  challenge:
+    "Réinterpréter des œuvres classiques de Georges de La Tour à travers une esthétique brutaliste contemporaine, en créant un contraste visuel fort entre la finesse du clair-obscur baroque et un traitement graphique radical.",
+  description:
+    "Cette série de trois posters revisite des tableaux de Georges de La Tour en les transformant en affiches brutalistes contemporaines. Le projet mélange art classique et design graphique en adoptant un langage visuel volontairement radical. Les compositions reposent sur une palette bicolore rouge et noir inspirée de l’esthétique protest punk et de l’impression sérigraphique. Les images sont traitées en aplats granuleux proches de la photocopie, avec des textures brutes rappelant les fanzines DIY et les impressions artisanales. Des textures de papier froissé renforcent l’aspect d’objet imprimé, presque clandestin. La direction typographique utilise des blocs massifs et des alignements stricts, caractéristiques du brutalisme graphique, combinés à une mise en page éditoriale mêlant titre impactant, cartouche descriptif et composition muséale revisitée. La série crée ainsi un dialogue visuel entre l’histoire de l’art et les codes du design contemporain.",
+  thumbnailColor: "#1A1A1A",
+  thumbnail: "/images/posters/delatour.png",
+  images: [
+    "/images/posters/diseuse.png",
+    "/images/posters/musiciens.png",
+    "/images/posters/tricheur.png",
+  ],
+},
+  {
+  id: "11",
+  title: "Série Brutaliste - Posters Manga",
+  category: "visuals",
+  year: "2024",
+  role: "Graphiste / Illustratrice",
+  tools: ["Illustrator", "Photoshop"],
+  challenge:
+    "Réinterpréter des personnages emblématiques d’anime à travers une esthétique brutaliste contemporaine, en combinant les codes graphiques du manga avec une direction artistique éditoriale forte.",
+  description:
+    "Posters Manga – Série Brutaliste est une série d’affiches graphiques qui fusionne l’esthétique visuelle du manga avec les principes du design brutaliste. Chaque poster revisite un personnage emblématique d’anime en explorant son identité, son énergie et sa dualité à travers une composition graphique marquée. La direction artistique repose sur des typographies massives, des grilles géométriques apparentes inspirées de la mise en page éditoriale, ainsi que des textures brutes comme le papier froissé, le grain ou la trame d’impression. Les contrastes extrêmes évoquent l’univers des fanzines et des impressions DIY, tandis que le découpage en cases rappelle la narration visuelle du manga. Chaque affiche utilise une couleur dominante associée au personnage afin de créer une série cohérente tout en conservant une identité visuelle propre à chaque protagoniste.",
+  thumbnailColor: "#EDEDED",
+  thumbnail: "/images/posters/mangas.png",
+  images: [
+    "/images/posters/eren.png",
+    "/images/posters/gon.png",
+    "/images/posters/light.png",
+    "/images/posters/luffy.png",
+    "/images/posters/naruto.png",
+    "/images/posters/tanjiro.png",
+  ],
+},
 ]
 
 export const categories = [

@@ -19,17 +19,20 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex flex-col justify-between px-6 md:px-12 lg:px-20 py-8">
-      {/* Top bar */}
-      <header className="flex items-center justify-between">
-        <span
-          className="font-mono text-xs text-muted-foreground tracking-widest uppercase"
-          style={{
-            opacity: mounted ? 1 : 0,
-            animation: mounted ? "fade-in 0.6s ease forwards" : "none",
-            animationDelay: "0.2s",
-          }}
-        >
+   <section className="relative min-h-screen flex flex-col justify-between px-6 md:px-12 lg:px-20 py-8">
+  {/* Top bar */}
+  <header className="flex items-center justify-between">
+    <span
+      className="font-mono text-xs text-muted-foreground tracking-widest uppercase"
+      style={{
+        opacity: mounted ? 1 : 0,
+        animationName: mounted ? "fade-in" : "none",
+        animationDuration: "0.6s",
+        animationTimingFunction: "ease",
+        animationFillMode: "forwards",
+        animationDelay: "0.2s",
+      }}
+    >
           Portfolio 2026
         </span>
         <nav className="flex gap-6">
