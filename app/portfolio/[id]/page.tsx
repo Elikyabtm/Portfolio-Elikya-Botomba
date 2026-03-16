@@ -5,6 +5,8 @@ import { ArrowLeft, ArrowUpRight } from "lucide-react"
 import { projects, getProjectById } from "@/lib/projects"
 import { SiteFooter } from "@/components/site-footer"
 import { TrackPlayer } from "@/components/track-player"
+import { ImageGallery } from "@/components/image-gallery"
+import { WebsiteEmbed } from "@/components/website-embed"
 import { notFound } from "next/navigation"
 
 export async function generateStaticParams() {
@@ -180,29 +182,17 @@ export default async function ProjectPage({
         </section>
       )}
 
+      {/* Website embed section */}
+      {project.websiteUrl && (
+        <section className="px-6 md:px-12 lg:px-20 py-24">
+          <WebsiteEmbed url={project.websiteUrl} title={project.title} mobileOnly={project.mobileOnly} />
+        </section>
+      )}
+
       {/* Visual sections */}
       <section className="px-6 md:px-12 lg:px-20 py-24">
         {project.images && project.images.length > 0 ? (
-          <>
-            <span className="font-mono text-xs text-primary tracking-widest uppercase mb-8 block">
-              Galerie
-            </span>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {project.images.map((img, i) => (
-                <div
-                  key={i}
-                  className="aspect-[3/4] border border-border relative overflow-hidden bg-muted group"
-                >
-                  <Image
-                    src={img}
-                    alt={`${project.title} - ${i + 1}`}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-              ))}
-            </div>
-          </>
+          <ImageGallery images={project.images} projectTitle={project.title} />
         ) : (
           <>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

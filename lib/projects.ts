@@ -19,6 +19,8 @@ export type Project = {
   thumbnail?: string
   tracks?: Track[]
   video?: string
+  websiteUrl?: string
+  mobileOnly?: boolean
 }
 
 export const projects: Project[] = [
@@ -117,29 +119,39 @@ export const projects: Project[] = [
   },
   {
     id: "06",
-    title: "GRID BREAKER",
+    title: "Hawkins Files",
     category: "digital",
-    year: "2024",
-    role: "Web Designer / Developpeur",
-    tools: ["Figma", "Next.js", "Tailwind CSS", "Framer Motion"],
+    year: "2025",
+    role: "UX/UI Designer & Developer",
+    tools: ["HTML", "CSS", "JavaScript", "Illustrator"],
     challenge:
-      "Redesigner le site portfolio d'une agence creative pour refleter leur philosophie rebelle et non-conformiste.",
+      "Transformer l'univers narratif de Stranger Things en une experience web interactive permettant aux utilisateurs d'enqueter sur les evenements paranormaux survenus a Hawkins.",
     description:
-      "Un site portfolio qui casse intentionnellement les conventions de grille. Les elements se chevauchent, le texte sort de l'ecran et les elements interactifs ont des comportements inattendus - tout en maintenant utilisabilite et accessibilite.",
-    thumbnailColor: "#F2F2F2",
+      "Hawkins Files est une experience web immersive concue comme un systeme d'archives classifiees et un outil d'enquete inspire de la serie Stranger Things. Le projet transforme l'utilisateur en agent charge d'analyser les anomalies liees a l'Upside Down a travers une interface rappelant les terminaux militaires et les bases de donnees gouvernementales. Le site propose une carte interactive de Hawkins, des chronologies detaillees couvrant les saisons 1 a 4, ainsi que des dossiers classifies sur les personnages et les creatures de la serie. Les lieux sont categorises par niveau de menace (standard, militaire ou paranormal) et chaque interaction permet d'acceder a des informations contextuelles, des evenements cles et des documents d'enquete. L'interface sombre, les codes couleurs (vert, orange, rouge) et les animations minimalistes renforcent l'immersion en simulant l'acces a une base de donnees secrete. Ce projet explore la rencontre entre web design, storytelling interactif et experience utilisateur narrative.",
+    thumbnailColor: "#1A1A1A",
+    websiteUrl: "https://hawkinsfiles.vercel.app/",
   },
   {
     id: "07",
-    title: "ECHO CHAMBER",
-    category: "sound",
-    year: "2023",
-    role: "Sound Designer / Beatmaker",
-    tools: ["Ableton Live", "Max/MSP", "Audacity"],
+    title: "Why Are Hyperlinks Blue?",
+    category: "digital",
+    year: "2025",
+    role: "UX/UI Designer & Developer",
+    tools: ["Figma", "HTML", "CSS", "JavaScript"],
     challenge:
-      "Concevoir l'environnement sonore d'une installation artistique immersive sur les chambres d'echo informationnelles.",
+      "Transformer un article editorial sur l'histoire de la couleur des hyperliens en une experience mobile interactive capable de rendre un sujet technique accessible, engageant et memorable.",
     description:
-      "Une experience audio spatiale ou les voix des visiteurs sont capturees, deformees et rejouees depuis plusieurs enceintes, creant un paysage sonore en constante evolution refletant la boucle de feedback de la consommation mediatique moderne.",
-    thumbnailColor: "#E60000",
+      "Why Are Hyperlinks Blue? est une experience interactive de type scrollytelling concue pour mobile. Le projet adapte un article sur l'origine et l'evolution de la couleur des hyperliens en une narration visuelle et interactive. L'interface guide l'utilisateur a travers l'histoire du web, depuis les premiers concepts d'hypertexte comme le projet Xanadu jusqu'aux navigateurs des annees 1990 qui ont popularise les liens bleus. L'experience combine textes courts, cartes interactives, mini-tests et elements visuels afin de rendre un sujet technique plus accessible et immersif. Le design repose sur une direction artistique minimaliste dominee par le bleu, rappelant la couleur historique des hyperliens. Ce choix fait echo a l'histoire du navigateur Mosaic qui, en 1993, a largement popularise les liens bleus et contribue a en faire un standard visuel du web.",
+    thumbnailColor: "#0551C1",
+    thumbnail: "/images/projects/hyperlink-cover.png",
+    images: [
+      "/images/projects/hyperlink-cover.png",
+      "/images/projects/hyperlink-1.png",
+      "/images/projects/hyperlink-2.png",
+      "/images/projects/hyperlink-3.png",
+    ],
+    websiteUrl: "https://hyperlinks-pi.vercel.app/",
+    mobileOnly: true,
   },
   {
     id: "08",
@@ -168,47 +180,47 @@ export const projects: Project[] = [
     thumbnailColor: "#E60000",
     video: "/videos/explicative.mp4",
   },
-    {
-  id: "10",
-title: "Série Brutaliste – Œuvres de Georges de La Tour",
-  category: "visuals",
-  year: "2024",
-  role: "Graphiste",
-  tools: ["Illustrator", "Photoshop"],
-  challenge:
-    "Réinterpréter des œuvres classiques de Georges de La Tour à travers une esthétique brutaliste contemporaine, en créant un contraste visuel fort entre la finesse du clair-obscur baroque et un traitement graphique radical.",
-  description:
-    "Cette série de trois posters revisite des tableaux de Georges de La Tour en les transformant en affiches brutalistes contemporaines. Le projet mélange art classique et design graphique en adoptant un langage visuel volontairement radical. Les compositions reposent sur une palette bicolore rouge et noir inspirée de l’esthétique protest punk et de l’impression sérigraphique. Les images sont traitées en aplats granuleux proches de la photocopie, avec des textures brutes rappelant les fanzines DIY et les impressions artisanales. Des textures de papier froissé renforcent l’aspect d’objet imprimé, presque clandestin. La direction typographique utilise des blocs massifs et des alignements stricts, caractéristiques du brutalisme graphique, combinés à une mise en page éditoriale mêlant titre impactant, cartouche descriptif et composition muséale revisitée. La série crée ainsi un dialogue visuel entre l’histoire de l’art et les codes du design contemporain.",
-  thumbnailColor: "#1A1A1A",
-  thumbnail: "/images/posters/delatour.png",
-  images: [
-    "/images/posters/diseuse.png",
-    "/images/posters/musiciens.png",
-    "/images/posters/tricheur.png",
-  ],
-},
   {
-  id: "11",
-  title: "Série Brutaliste - Posters Manga",
-  category: "visuals",
-  year: "2024",
-  role: "Graphiste / Illustratrice",
-  tools: ["Illustrator", "Photoshop"],
-  challenge:
-    "Réinterpréter des personnages emblématiques d’anime à travers une esthétique brutaliste contemporaine, en combinant les codes graphiques du manga avec une direction artistique éditoriale forte.",
-  description:
-    "Posters Manga – Série Brutaliste est une série d’affiches graphiques qui fusionne l’esthétique visuelle du manga avec les principes du design brutaliste. Chaque poster revisite un personnage emblématique d’anime en explorant son identité, son énergie et sa dualité à travers une composition graphique marquée. La direction artistique repose sur des typographies massives, des grilles géométriques apparentes inspirées de la mise en page éditoriale, ainsi que des textures brutes comme le papier froissé, le grain ou la trame d’impression. Les contrastes extrêmes évoquent l’univers des fanzines et des impressions DIY, tandis que le découpage en cases rappelle la narration visuelle du manga. Chaque affiche utilise une couleur dominante associée au personnage afin de créer une série cohérente tout en conservant une identité visuelle propre à chaque protagoniste.",
-  thumbnailColor: "#EDEDED",
-  thumbnail: "/images/posters/mangas.png",
-  images: [
-    "/images/posters/eren.png",
-    "/images/posters/gon.png",
-    "/images/posters/light.png",
-    "/images/posters/luffy.png",
-    "/images/posters/naruto.png",
-    "/images/posters/tanjiro.png",
-  ],
-},
+    id: "10",
+    title: "Série Brutaliste – Œuvres de Georges de La Tour",
+    category: "visuals",
+    year: "2024",
+    role: "Graphiste",
+    tools: ["Illustrator", "Photoshop"],
+    challenge:
+      "Réinterpréter des œuvres classiques de Georges de La Tour à travers une esthétique brutaliste contemporaine, en créant un contraste visuel fort entre la finesse du clair-obscur baroque et un traitement graphique radical.",
+    description:
+      "Cette série de trois posters revisite des tableaux de Georges de La Tour en les transformant en affiches brutalistes contemporaines. Le projet mélange art classique et design graphique en adoptant un langage visuel volontairement radical. Les compositions reposent sur une palette bicolore rouge et noir inspirée de l’esthétique protest punk et de l’impression sérigraphique. Les images sont traitées en aplats granuleux proches de la photocopie, avec des textures brutes rappelant les fanzines DIY et les impressions artisanales. Des textures de papier froissé renforcent l’aspect d’objet imprimé, presque clandestin. La direction typographique utilise des blocs massifs et des alignements stricts, caractéristiques du brutalisme graphique, combinés à une mise en page éditoriale mêlant titre impactant, cartouche descriptif et composition muséale revisitée. La série crée ainsi un dialogue visuel entre l’histoire de l’art et les codes du design contemporain.",
+    thumbnailColor: "#1A1A1A",
+    thumbnail: "/images/posters/delatour.png",
+    images: [
+      "/images/posters/diseuse.png",
+      "/images/posters/musiciens.png",
+      "/images/posters/tricheur.png",
+    ],
+  },
+  {
+    id: "11",
+    title: "Série Brutaliste - Posters Manga",
+    category: "visuals",
+    year: "2024",
+    role: "Graphiste / Illustratrice",
+    tools: ["Illustrator", "Photoshop"],
+    challenge:
+      "Réinterpréter des personnages emblématiques d’anime à travers une esthétique brutaliste contemporaine, en combinant les codes graphiques du manga avec une direction artistique éditoriale forte.",
+    description:
+      "Posters Manga – Série Brutaliste est une série d’affiches graphiques qui fusionne l’esthétique visuelle du manga avec les principes du design brutaliste. Chaque poster revisite un personnage emblématique d’anime en explorant son identité, son énergie et sa dualité à travers une composition graphique marquée. La direction artistique repose sur des typographies massives, des grilles géométriques apparentes inspirées de la mise en page éditoriale, ainsi que des textures brutes comme le papier froissé, le grain ou la trame d’impression. Les contrastes extrêmes évoquent l’univers des fanzines et des impressions DIY, tandis que le découpage en cases rappelle la narration visuelle du manga. Chaque affiche utilise une couleur dominante associée au personnage afin de créer une série cohérente tout en conservant une identité visuelle propre à chaque protagoniste.",
+    thumbnailColor: "#EDEDED",
+    thumbnail: "/images/posters/mangas.png",
+    images: [
+      "/images/posters/eren.png",
+      "/images/posters/gon.png",
+      "/images/posters/light.png",
+      "/images/posters/luffy.png",
+      "/images/posters/naruto.png",
+      "/images/posters/tanjiro.png",
+    ],
+  },
 ]
 
 export const categories = [
