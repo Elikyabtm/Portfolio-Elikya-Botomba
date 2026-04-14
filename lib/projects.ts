@@ -155,16 +155,23 @@ export const projects: Project[] = [
   },
   {
     id: "08",
-    title: "PAPER CUT",
-    category: "visuals",
-    year: "2023",
-    role: "Graphiste / Illustrateur",
-    tools: ["Illustrator", "Photoshop", "Risograph"],
+    title: "Nuance – Sensory Social Map",
+    category: "digital",
+    year: "2026",
+    role: "UX/UI Designer & Developer",
+    tools: ["Figma", "HTML", "CSS", "JavaScript"],
     challenge:
-      "Creer une serie de zines en edition limitee explorant l'intersection du street art et de la gravure sur bois japonaise traditionnelle.",
+      "Concevoir une application géolocalisée inclusive permettant aux personnes neurodivergentes d’anticiper les stimulations sensorielles de leur environnement et de se déplacer en ville de manière plus sereine.",
     description:
-      "Une serie de 4 zines de 24 pages chacun, imprimes en combinant Risograph et techniques de tamponnage a la main. Le langage visuel fusionne les formes du graffiti avec des compositions inspirees de l'ukiyo-e.",
-    thumbnailColor: "#F2F2F2",
+      "Nuance est une application sociale et géolocalisée pensée pour accompagner les personnes neurodivergentes dans leur exploration de l’espace urbain. Le projet propose une carte sensorielle interactive qui permet d’identifier l’intensité de différents facteurs comme le bruit, la luminosité ou l’affluence. L’utilisateur peut découvrir des lieux adaptés à ses besoins, appelés « sensory friendly », et accéder à des informations contextualisées pour anticiper son expérience. L’application intègre également une dimension communautaire forte avec le partage d’avis, de recommandations et de sorties collectives. Chaque profil est personnalisable selon les sensibilités de l’utilisateur, afin d’offrir une expérience adaptée et inclusive. Nuance vise à rendre la ville plus lisible, prévisible et accessible, tout en créant un espace de soutien et de lien social autour des expériences sensorielles.",
+    thumbnailColor: "#0551C1",
+    thumbnail: "/images/projects/nuancecover.png",
+    images: [
+      "/images/projects/nuancecover.png",
+      "/images/projects/nuance1.png",
+    ],
+    websiteUrl: "https://embed.figma.com/proto/OCpwN1TsSnBzLvMnMNTbyT/nuance-app-sociale-geolocalisee?page-id=2034%3A24685&node-id=5374-28262&viewport=522%2C208%2C0.03&scaling=scale-down&content-scaling=fixed&starting-point-node-id=5374%3A28262&embed-host=share",
+    mobileOnly: true,
   },
   {
     id: "09",
