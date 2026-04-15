@@ -6,20 +6,16 @@ import Image from "next/image"
 import { ArrowUpRight } from "lucide-react"
 import { projects, categories, type Project } from "@/lib/projects"
 
-function ProjectCard({ project, index }: { project: Project; index: number }) {
-  const isLarge = index % 3 === 0
-
+function ProjectCard({ project }: { project: Project }) {
   return (
     <Link
       href={`/portfolio/${project.id}`}
       data-cursor="VOIR"
-      className={`group block relative overflow-hidden border border-border hover:border-primary transition-colors duration-300 ${
-        isLarge ? "md:col-span-2 md:row-span-2" : ""
-      }`}
+      className="group block relative overflow-hidden border border-border hover:border-primary transition-colors duration-300"
     >
       {/* Thumbnail */}
       <div
-        className="aspect-[4/3] w-full relative overflow-hidden"
+        className="aspect-square w-full relative overflow-hidden"
         style={{ backgroundColor: project.thumbnail ? "#1A1A1A" : project.thumbnailColor + "10" }}
       >
         {project.thumbnail ? (
@@ -85,11 +81,10 @@ export function PortfolioGallery({ initialCategory = "all" }: { initialCategory?
             key={cat.value}
             onClick={() => setActiveCategory(cat.value)}
             data-cursor={cat.label}
-            className={`font-mono text-xs tracking-widest uppercase px-4 py-2 border transition-all duration-200 ${
-              activeCategory === cat.value
+            className={`font-mono text-xs tracking-widest uppercase px-4 py-2 border transition-all duration-200 ${activeCategory === cat.value
                 ? "bg-primary border-primary text-primary-foreground"
                 : "border-border text-muted-foreground hover:text-foreground hover:border-foreground"
-            }`}
+              }`}
           >
             {cat.label}
             <span className="ml-2 text-[10px]">
@@ -102,9 +97,9 @@ export function PortfolioGallery({ initialCategory = "all" }: { initialCategory?
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {filtered.map((project, i) => (
-          <ProjectCard key={project.id} project={project} index={i} />
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {filtered.map((project) => (
+          <ProjectCard key={project.id} project={project} />
         ))}
       </div>
     </div>

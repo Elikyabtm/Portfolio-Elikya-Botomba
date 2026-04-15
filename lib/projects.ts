@@ -24,8 +24,31 @@ export type Project = {
 }
 
 export const projects: Project[] = [
-  {
+    {
     id: "01",
+    title: "SCARED OF MY OWN IMAGE PART.1",
+    category: "visuals",
+    year: "2024",
+    role: "Illustratrice",
+    tools: ["Photoshop", "Procreate"],
+    challenge:
+      "Capturer l'essence et la personnalité de differents visages à travers une serie de portraits illustres avec un style hachure a l'encre.",
+    description:
+      "Une série de 7 portraits digitaux realisés avec une technique de hachures croisées. Chaque illustration explore les jeux de lumiere, les textures de peau et les expressions, en combinant un trait brut a l'encre avec des aplats de couleur numeriques.",
+    thumbnailColor: "#F2F2F2",
+    thumbnail: "/images/portraits/portraits1.png",
+    images: [
+      "/images/portraits/portrait01.jpg",
+      "/images/portraits/portrait02.jpg",
+      "/images/portraits/portrait03.jpg",
+      "/images/portraits/portrait04.jpg",
+      "/images/portraits/portrait05.jpg",
+      "/images/portraits/portrait06.jpg",
+      "/images/portraits/portrait07.jpg",
+    ],
+  },
+  {
+    id: "02",
     title: "NOCTA - SOCIAL AD",
     category: "motion",
     year: "2025",
@@ -38,7 +61,7 @@ export const projects: Project[] = [
     thumbnailColor: ""
   },
   {
-    id: "02",
+    id: "03",
     title: "Pop Culture Crossroads",
     category: "visuals",
     year: "2026",
@@ -59,8 +82,8 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "03",
-    title: "EMOTIONS VOL.",
+    id: "04",
+    title: "EMOTIONS",
     category: "sound",
     year: "2024",
     role: "Beatmaker",
@@ -79,31 +102,27 @@ export const projects: Project[] = [
       { title: "The End", cover: "/images/prods/The End.png", audio: "/audio/the-end.mp3", volume: "Vol.5" },
     ],
   },
-  {
-    id: "04",
-    title: "SCARED OF MY OWN IMAGE VOL.1",
-    category: "visuals",
-    year: "2024",
-    role: "Illustratrice",
-    tools: ["Photoshop", "Procreate"],
+    {
+    id: "05",
+    title: "Amnésia",
+    category: "digital",
+    year: "2026",
+    role: "Game Designer & Developer",
+    tools: ["HTML", "CSS", "JavaScript", "Illustrator"],
     challenge:
-      "Capturer l'essence et la personnalité de differents visages à travers une serie de portraits illustres avec un style hachure a l'encre.",
+      "Créer une expérience immersive d’enquête numérique dans laquelle le joueur reconstitue son identité uniquement à partir de traces digitales fragmentées.",
     description:
-      "Une série de 7 portraits digitaux realisés avec une technique de hachures croisées. Chaque illustration explore les jeux de lumiere, les textures de peau et les expressions, en combinant un trait brut a l'encre avec des aplats de couleur numeriques.",
-    thumbnailColor: "#F2F2F2",
-    thumbnail: "/images/portraits/portraits.png",
+      "Amnesia est un jeu d’enquête interactif qui plonge le joueur dans une interface simulant un système informatique. Privé de mémoire, il doit explorer des e-mails, des fichiers, des photos et divers documents afin de reconstituer progressivement son identité. L’expérience repose sur l’observation, l’analyse et la déduction, en laissant au joueur la liberté d’interpréter les indices disponibles. Chaque élément consulté contribue à construire une narration fragmentée, où plusieurs pistes peuvent coexister avant de révéler la vérité. Le projet explore les notions de mémoire, d’identité et de narration interactive à travers une interface minimaliste inspirée des environnements numériques réels.",
+    thumbnailColor: "#1A1A1A",
+    thumbnail: "/images/projects/amnesiacover.png",
+    websiteUrl: "https://amnesia-ten.vercel.app/",
     images: [
-      "/images/portraits/portrait-01.jpg",
-      "/images/portraits/portrait-02.jpg",
-      "/images/portraits/portrait-03.jpg",
-      "/images/portraits/portrait-04.jpg",
-      "/images/portraits/portrait-05.jpg",
-      "/images/portraits/portrait-06.jpg",
-      "/images/portraits/portrait-07.jpg",
+      "/images/projects/amnesia1.png",
+      "/images/projects/amnesia2.png",
     ],
   },
   {
-    id: "05",
+    id: "06",
     title: "DOONYS - PUB PROMO",
     category: "motion",
     year: "2024",
@@ -118,7 +137,32 @@ export const projects: Project[] = [
     video: "/videos/doonys.mp4",
   },
   {
-    id: "06",
+    id: "07",
+    title: "SCARED OF MY OWN IMAGE PART.2",
+    category: "visuals",
+    year: "2026",
+    role: "Illustratrice",
+    tools: ["Photoshop", "Procreate"],
+    challenge:
+      "Capturer l'essence et la personnalité de differents visages à travers une serie de portraits illustres avec un style hachure a l'encre.",
+    description:
+      "Une série de 8 portraits digitaux realisés avec une technique de hachures croisées. Chaque illustration explore les jeux de lumiere, les textures de peau et les expressions, en combinant un trait brut a l'encre avec des aplats de couleur numeriques.",
+    thumbnailColor: "#F2F2F2",
+    thumbnail: "/images/portraits/portraits2.png",
+    images: [
+      "/images/portraits/portrait08.jpg",
+      "/images/portraits/portrait09.jpg",
+      "/images/portraits/portrait10.jpg",
+      "/images/portraits/portrait11.jpg",
+      "/images/portraits/portrait12.jpg",
+      "/images/portraits/portrait13.jpg",
+      "/images/portraits/portrait14.jpg",
+      "/images/portraits/portrait15.jpg",
+    ],
+  },
+
+  {
+    id: "08",
     title: "Hawkins Files",
     category: "digital",
     year: "2025",
@@ -129,10 +173,16 @@ export const projects: Project[] = [
     description:
       "Hawkins Files est une experience web immersive concue comme un systeme d'archives classifiees et un outil d'enquete inspire de la serie Stranger Things. Le projet transforme l'utilisateur en agent charge d'analyser les anomalies liees a l'Upside Down a travers une interface rappelant les terminaux militaires et les bases de donnees gouvernementales. Le site propose une carte interactive de Hawkins, des chronologies detaillees couvrant les saisons 1 a 4, ainsi que des dossiers classifies sur les personnages et les creatures de la serie. Les lieux sont categorises par niveau de menace (standard, militaire ou paranormal) et chaque interaction permet d'acceder a des informations contextuelles, des evenements cles et des documents d'enquete. L'interface sombre, les codes couleurs (vert, orange, rouge) et les animations minimalistes renforcent l'immersion en simulant l'acces a une base de donnees secrete. Ce projet explore la rencontre entre web design, storytelling interactif et experience utilisateur narrative.",
     thumbnailColor: "#1A1A1A",
+    thumbnail: "/images/projects/hawkinsfilescover.png",
     websiteUrl: "https://hawkinsfiles.vercel.app/",
+    images: [
+      "/images/projects/hawkinsfiles1.png",
+      "/images/projects/hawkinsfiles2.png",
+      "/images/projects/hawkinsfiles3.png",
+    ],
   },
   {
-    id: "07",
+    id: "09",
     title: "Why Are Hyperlinks Blue?",
     category: "digital",
     year: "2025",
@@ -153,8 +203,28 @@ export const projects: Project[] = [
     websiteUrl: "https://hyperlinks-pi.vercel.app/",
     mobileOnly: true,
   },
+    {
+    id: "10",
+    title: "Ce que la mer rend",
+    category: "digital",
+    year: "2025",
+    role: "Writter & Developer",
+    tools: ["HTML", "CSS", "JavaScript", "Illustrator"],
+    challenge:
+      "Concevoir un site littéraire immersif capable de traduire l’atmosphère d’un roman médiéval-fantastique en une expérience de lecture sensible, cinématique et interactive.",
+    description:
+      "Ce que la mer rend est un site littéraire immersif imaginé pour accompagner mon roman du même nom, une fiction médiévale-fantastique située sur l’île sauvage de Brunehame. Le projet plonge le visiteur dans un univers battu par les vents, entre falaises sombres, brume marine et lumières d’ambre, à travers une direction artistique évocatrice et une navigation pensée comme une expérience de lecture. Le site présente les personnages principaux, Edrin et Alma, met en scène un herbier interactif lié à l’univers du récit, et propose un curseur thématique explorant l’équilibre entre destruction et réparation. Une table des matières complète permet également d’accéder aux chapitres du roman, générés automatiquement depuis le fichier source, avec une lecture fluide et une navigation entre les pages. Le projet mêle narration, atmosphère visuelle et interaction pour transformer l’univers littéraire en expérience web sensible et immersive.",
+    thumbnailColor: "#1A1A1A",
+    thumbnail: "/images/projects/cequelamerrendcover.png",
+    websiteUrl: "https://cequelamerrend.vercel.app/",
+    images: [
+      "/images/projects/cequelamerrendcover.png",
+      "/images/projects/cequelamerrend1.png",
+      "/images/projects/cequelamerrend2.png",
+    ],
+  },
   {
-    id: "08",
+    id: "11",
     title: "Nuance – Sensory Social Map",
     category: "digital",
     year: "2026",
@@ -169,13 +239,14 @@ export const projects: Project[] = [
     images: [
       "/images/projects/nuancecover.png",
       "/images/projects/nuance1.png",
+      "/images/projects/nuance3.png",
     ],
     websiteUrl: "https://embed.figma.com/proto/OCpwN1TsSnBzLvMnMNTbyT/nuance-app-sociale-geolocalisee?page-id=2034%3A24685&node-id=5374-28262&viewport=522%2C208%2C0.03&scaling=scale-down&content-scaling=fixed&starting-point-node-id=5374%3A28262&embed-host=share",
     mobileOnly: true,
   },
   {
-    id: "09",
-    title: "c'est quoi l'épiphysiolyse ?",
+    id: "12",
+    title: "C'est quoi l'épiphysiolyse ?",
     category: "motion",
     year: "2025",
     role: "Motion Designer",
@@ -185,10 +256,11 @@ export const projects: Project[] = [
     description:
       "Une vidéo ayant pour objectif principal la pédagogie et doit utiliser toute la palette d’outils du motion design afin de rendre accessible un savoir que vous pourrez au choix synthétiser et vulgariser ou au contraire en développer la complexité.",
     thumbnailColor: "#E60000",
+    thumbnail: "videos/epiphysiolysecover.png",
     video: "/videos/explicative.mp4",
   },
   {
-    id: "10",
+    id: "13",
     title: "Série Brutaliste – Œuvres de Georges de La Tour",
     category: "visuals",
     year: "2024",
@@ -206,8 +278,28 @@ export const projects: Project[] = [
       "/images/posters/tricheur.png",
     ],
   },
+    {
+    id: "14",
+    title: "HarryPotterLand – Interactive Map",
+    category: "digital",
+    year: "2025",
+    role: "Graphic Designer & Developer",
+    tools: ["HTML", "CSS", "JavaScript", "Illustrator"],
+    challenge:
+      "Concevoir une carte vectorielle interactive capable de représenter de manière claire, structurée et accessible les lieux emblématiques de l’univers de Harry Potter dans un format immersif et muséal.",
+    description:
+      "HarryPotterLand est une carte interactive inspirée de l’univers de Harry Potter, pensée comme un support de médiation visuelle et narrative. Le projet associe une conception graphique vectorielle réalisée sur Illustrator à un travail de postproduction visuelle et de mise en interaction via des outils de prototypage et de développement web. L’objectif est de proposer une lecture claire et attractive des lieux emblématiques de la saga, dans une forme adaptée à une exposition interactive. Chaque zone de la carte est enrichie par des pop-ups dynamiques déclenchés au clic, donnant accès à des informations contextuelles sur les bâtiments, les personnages notables qui les fréquentent ainsi que les événements marquants qui s’y déroulent. Le projet mêle cartographie illustrée, design d’interface et narration interactive pour transformer un univers fictionnel en expérience exploratoire accessible et engageante.",
+    thumbnailColor: "#1A1A1A",
+    thumbnail: "/images/projects/harrypotterland.png",
+    websiteUrl: "https://elikyabtm.github.io/Harrypotterland/",
+    images: [
+      "/images/projects/harrypotterland.png",
+      "/images/projects/harrypotterland1.png",
+      "/images/projects/harrypotterland2.png",
+    ],
+  },
   {
-    id: "11",
+    id: "15",
     title: "Série Brutaliste - Posters Manga",
     category: "visuals",
     year: "2024",

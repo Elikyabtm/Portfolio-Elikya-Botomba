@@ -7,6 +7,7 @@ import { SiteFooter } from "@/components/site-footer"
 import { TrackPlayer } from "@/components/track-player"
 import { ImageGallery } from "@/components/image-gallery"
 import { WebsiteEmbed } from "@/components/website-embed"
+import { AdaptiveThumbnail } from "@/components/adaptive-thumbnail"
 import { notFound } from "next/navigation"
 
 export async function generateStaticParams() {
@@ -115,15 +116,12 @@ export default async function ProjectPage({
             />
           </div>
         ) : project.thumbnail ? (
-          <div className="w-full aspect-video border border-border relative overflow-hidden bg-muted">
-            <Image
-              src={project.thumbnail}
-              alt={project.title}
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
+          <AdaptiveThumbnail
+            src={project.thumbnail}
+            alt={project.title}
+            fallbackColor={project.thumbnailColor}
+            fallbackId={project.id}
+          />
         ) : (
           <div
             className="w-full aspect-video border border-border relative overflow-hidden"

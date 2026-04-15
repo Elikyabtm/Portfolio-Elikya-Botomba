@@ -90,26 +90,38 @@ export function ImageGallery({
     return () => window.removeEventListener("keydown", handleKeyDown)
   }, [lightboxOpen])
 
+  // Normalize aspect ratio to standardized values
+  const getAspectRatio = (aspectRatio: "portrait" | "landscape" | "square") => {
+    switch (aspectRatio) {
+      case "portrait":
+        return "3 / 4"
+      case "landscape":
+        return "4 / 3"
+      default:
+        return "1 / 1"
+    }
+  }
+
   return (
     <>
       <span className="font-mono text-xs text-primary tracking-widest uppercase mb-8 block">
         Galerie
       </span>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-fr">
         {imagesWithDimensions.length > 0
           ? imagesWithDimensions.map((img, i) => (
               <button
                 key={i}
                 onClick={() => openLightbox(i)}
                 className="border border-border relative overflow-hidden bg-muted group cursor-pointer"
-                style={{ aspectRatio: `${img.width} / ${img.height}` }}
+                style={{ aspectRatio: getAspectRatio(img.aspectRatio) }}
                 data-cursor="VOIR"
               >
                 <Image
                   src={img.src}
                   alt={`${projectTitle} - ${i + 1}`}
                   fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </button>
             ))
@@ -118,14 +130,14 @@ export function ImageGallery({
               <button
                 key={i}
                 onClick={() => openLightbox(i)}
-                className="aspect-[3/4] border border-border relative overflow-hidden bg-muted group cursor-pointer"
+                className="aspect-square border border-border relative overflow-hidden bg-muted group cursor-pointer"
                 data-cursor="VOIR"
               >
                 <Image
                   src={img}
                   alt={`${projectTitle} - ${i + 1}`}
                   fill
-                  className="object-contain group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </button>
             ))}
