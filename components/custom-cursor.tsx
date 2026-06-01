@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState, useCallback } from "react"
 
 export function CustomCursor() {
   const cursorRef = useRef<HTMLDivElement>(null)
@@ -13,33 +13,29 @@ export function CustomCursor() {
     const labelEl = labelRef.current
     if (!cursor || !labelEl) return
 
+    // FIX : on écrit left/top directement dans mousemove, sans RAF loop
     const onMouseMove = (e: MouseEvent) => {
       cursor.style.left = `${e.clientX}px`
       cursor.style.top = `${e.clientY}px`
       labelEl.style.left = `${e.clientX}px`
       labelEl.style.top = `${e.clientY}px`
-    }
 
-    const onMouseOver = (e: MouseEvent) => {
+      // FIX : détection hover ici au lieu d'un listener mouseover séparé
+      // mouseover bubble sur tous les enfants → lag. mousemove = 1 event/frame max.
       const target = e.target as HTMLElement
       const interactive = target.closest("a, button, [data-cursor]")
       if (interactive) {
+        const txt = interactive.getAttribute("data-cursor") || "VOIR"
         setIsHovering(true)
-        const cursorLabel =
-          interactive.getAttribute("data-cursor") || "VOIR"
-        setLabel(cursorLabel)
+        setLabel(txt)
       } else {
         setIsHovering(false)
         setLabel("")
       }
     }
 
-    window.addEventListener("mousemove", onMouseMove)
-    window.addEventListener("mouseover", onMouseOver)
-    return () => {
-      window.removeEventListener("mousemove", onMouseMove)
-      window.removeEventListener("mouseover", onMouseOver)
-    }
+    window.addEventListener("mousemove", onMouseMove, { passive: true })
+    return () => window.removeEventListener("mousemove", onMouseMove)
   }, [])
 
   return (

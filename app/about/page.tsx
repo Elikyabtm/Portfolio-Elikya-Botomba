@@ -2,7 +2,6 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 import { TechStack } from "@/components/tech-stack"
-import { LabSection } from "@/components/lab-section"
 import { SiteFooter } from "@/components/site-footer"
 
 export const metadata: Metadata = {
@@ -115,9 +114,6 @@ export default function AboutPage() {
 
       {/* Tech Stack */}
       <TechStack />
-
-      {/* Lab */}
-      <LabSection />
 
       <SiteFooter />
     </main>
