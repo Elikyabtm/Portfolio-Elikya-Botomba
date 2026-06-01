@@ -41,7 +41,7 @@ export default function ContactPage() {
               href="/about"
               className="font-mono text-xs text-muted-foreground hover:text-primary tracking-widest uppercase transition-colors"
             >
-              A propos
+              À propos
             </Link>
           </nav>
         </div>
@@ -58,7 +58,7 @@ export default function ContactPage() {
           <span className="text-primary">DISCUTE.</span>
         </h1>
         <p className="font-mono text-sm text-muted-foreground max-w-lg leading-relaxed mt-8">
-          {"Vous avez un projet en tete, une idee de collaboration, ou simplement envie de dire bonjour ? Je suis toujours ouvert aux nouvelles opportunites creatives."}
+          {"Vous avez un projet en tête, une idée de collaboration, ou simplement envie de dire bonjour ? Je suis toujours ouverte aux nouvelles opportunités créatives."}
         </p>
       </section>
 
@@ -106,7 +106,7 @@ export default function ContactPage() {
                 Paris, France
               </p>
               <p className="font-mono text-xs text-muted-foreground mt-1">
-                Ouvert aux propositions
+                Ouverte aux propositions
               </p>
             </div>
 

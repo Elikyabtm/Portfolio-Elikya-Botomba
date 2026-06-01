@@ -46,10 +46,10 @@ export default function AboutPage() {
       {/* Title */}
       <section className="px-6 md:px-12 lg:px-20 py-16 md:py-24">
         <span className="font-mono text-xs text-primary tracking-widest uppercase">
-          A propos
+          À propos
         </span>
         <h1 className="font-display text-6xl md:text-8xl lg:text-[10rem] uppercase text-foreground leading-[0.85] mt-4">
-          {"A PROPOS"}
+          {"À PROPOS"}
         </h1>
       </section>
 
@@ -79,7 +79,7 @@ export default function AboutPage() {
                 Formation
               </span>
               <p className="font-sans text-sm text-foreground mt-1">
-                {"3eme annee - Web Design & Multimedia"}
+                {"3ème année - Web Design & Communication visuelle - ICAN"}
               </p>
             </div>
             <div>
@@ -96,17 +96,17 @@ export default function AboutPage() {
           <div className="md:col-span-8">
             <p className="font-sans text-lg md:text-xl text-foreground leading-relaxed">
               {
-                "Je suis un createur polyvalent qui travaille a l'intersection du design, du code, du motion et du son. Je crois que les meilleures experiences digitales naissent de la rupture des frontieres entre les disciplines."
+                "Je suis une créatrice pluridisciplinaire qui évolue entre le design, le développement web, la direction artistique, l’écriture et les expériences interactives. J’aime créer des projets qui racontent quelque chose, avec une vraie identité visuelle et émotionnelle."
               }
             </p>
             <p className="font-sans text-base text-muted-foreground leading-relaxed mt-6">
               {
-                "Actuellement en 3eme annee d'etudes, j'ai developpe une approche pluridisciplinaire qui couvre le web design, le motion design, le graphisme et la production musicale. Mon travail est influence par l'architecture brutaliste, la culture street et l'energie brute des scenes musicales underground."
+                "Actuellement en 3ème année d’études en web design, j’ai développé une approche mélangeant UI/UX, scrollytelling, branding, motion et développement front-end. Mon univers est influencé par le cinéma, la culture populaire, la mode streetwear, les expériences éditoriales immersives et les univers narratifs forts."
               }
             </p>
             <p className="font-sans text-base text-muted-foreground leading-relaxed mt-4">
               {
-                "J'aborde chaque projet comme un defi creatif, ou l'objectif n'est pas seulement de livrer une solution, mais de creer quelque chose de vivant, brut et authentique. Que ce soit un site web, une piece en motion ou un beat, j'apporte le meme niveau d'attention obsessionnelle au detail."
+                "J’aborde chaque projet comme une expérience complète : je ne cherche pas seulement à concevoir quelque chose de fonctionnel, mais à construire une atmosphère, une émotion et une intention. Qu’il s’agisse d’un site immersif, d’un projet interactif, d’un univers de marque ou d’un concept narratif, je porte une attention particulière aux détails, au rythme visuel et à la cohérence artistique."
               }
             </p>
           </div>

@@ -320,6 +320,34 @@ export const projects: Project[] = [
       "/images/posters/tanjiro.png",
     ],
   },
+    {
+    id: "16",
+    title: "Michelin Escapade",
+    category: "digital",
+    year: "2026",
+    role: "UX/UI Designer & Developer",
+    tools: ["Figma"],
+    challenge:
+      "Transformer l’autorité historique du Guide Michelin en un réflexe de consommation spontané et visuel pour la génération 25-30 ans.",
+    description:
+      "Michelin Escapade est un concept d’application mobile imaginé pour réinventer l’expérience du Guide Michelin à destination d’un public jeune et connecté. Le projet repense les codes traditionnels du guide gastronomique à travers une approche immersive, inspirée des usages des réseaux sociaux et des plateformes de contenu vertical. L’interface repose sur un scroll infini mêlant recommandations culinaires, destinations et expériences lifestyle dans un format visuel dynamique et spontané. Un onboarding personnalisé permet d’adapter les suggestions selon les habitudes, envies et styles de vie de chaque utilisateur afin de proposer une expérience sur mesure. Le concept introduit également des packages simplifiés combinant hôtel et restaurant en une seule réservation, afin de fluidifier l’organisation des escapades. Entre inspiration voyage, découverte culinaire et expérience premium, Michelin Escapade transforme le Guide Michelin en un compagnon de sortie intuitif, immersif et adapté aux nouveaux réflexes de consommation.",
+    thumbnailColor: "#0551C1",
+    thumbnail: "/images/projects/mockup.png",
+    images: [
+      "/images/projects/mockup.png",
+      "/images/projects/mockup 2.png",
+      "/images/projects/Colors.png",
+      "/images/projects/Typography.png",
+      "/images/projects/Grid.png",
+      "/images/projects/Buttons.png",
+      "/images/projects/Inputs.png",
+      "/images/projects/Components.png",
+      "/images/projects/Icons.png",
+      "/images/projects/Rewards.png",
+      "/images/projects/Imagery.png",
+    ],
+ video: "/videos/Michelin.mp4",
+  },
 ]
 
 export const categories = [

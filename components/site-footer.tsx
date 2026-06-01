@@ -20,7 +20,7 @@ export function SiteFooter() {
             Contact
           </span>
           <h2 className="font-display text-5xl md:text-7xl lg:text-[8rem] uppercase text-foreground leading-[0.85]">
-            {"CREONS"}
+            {"CRÉONS"}
             <br />
             <span className="text-primary">QUELQUE CHOSE.</span>
           </h2>

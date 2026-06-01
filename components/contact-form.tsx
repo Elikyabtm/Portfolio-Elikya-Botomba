@@ -111,7 +111,7 @@ export function ContactForm() {
       {/* Submit */}
       <button
         type="submit"
-        data-cursor="SEND"
+        data-cursor="Envoyer"
         className="group flex items-center justify-between border border-foreground p-6 hover:bg-primary hover:border-primary transition-all duration-300 mt-4"
       >
         <span className="font-display text-2xl uppercase text-foreground group-hover:text-primary-foreground transition-colors">

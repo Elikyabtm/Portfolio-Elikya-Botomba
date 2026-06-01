@@ -19,20 +19,20 @@ export function HeroSection() {
   }, [])
 
   return (
-   <section className="relative min-h-screen flex flex-col justify-between px-6 md:px-12 lg:px-20 py-8">
-  {/* Top bar */}
-  <header className="flex items-center justify-between">
-    <span
-      className="font-mono text-xs text-muted-foreground tracking-widest uppercase"
-      style={{
-        opacity: mounted ? 1 : 0,
-        animationName: mounted ? "fade-in" : "none",
-        animationDuration: "0.6s",
-        animationTimingFunction: "ease",
-        animationFillMode: "forwards",
-        animationDelay: "0.2s",
-      }}
-    >
+    <section className="relative min-h-screen flex flex-col justify-between px-6 md:px-12 lg:px-20 py-8">
+      {/* Top bar */}
+      <header className="flex items-center justify-between">
+        <span
+          className="font-mono text-xs text-muted-foreground tracking-widest uppercase"
+          style={{
+            opacity: mounted ? 1 : 0,
+            animationName: mounted ? "fade-in" : "none",
+            animationDuration: "0.6s",
+            animationTimingFunction: "ease",
+            animationFillMode: "forwards",
+            animationDelay: "0.2s",
+          }}
+        >
           Portfolio 2026
         </span>
         <nav className="flex gap-6">
@@ -50,7 +50,10 @@ export function HeroSection() {
               data-cursor={item === "CONTACT" ? "SALUT" : "VOIR"}
               style={{
                 opacity: mounted ? 1 : 0,
-                animation: mounted ? "fade-in 0.6s ease forwards" : "none",
+                animationName: mounted ? "fade-in" : "none",
+                animationDuration: "0.6s",
+                animationTimingFunction: "ease",
+                animationFillMode: "forwards",
                 animationDelay: `${0.3 + i * 0.1}s`,
               }}
             >
@@ -67,9 +70,10 @@ export function HeroSection() {
             className="font-display text-[clamp(3rem,12vw,12rem)] leading-[0.85] uppercase tracking-tight text-foreground"
             style={{
               opacity: mounted ? 1 : 0,
-              animation: mounted
-                ? "reveal-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards"
-                : "none",
+              animationName: mounted ? "reveal-up" : "none",
+              animationDuration: "0.8s",
+              animationTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
+              animationFillMode: "forwards",
               animationDelay: "0.5s",
             }}
           >
@@ -81,9 +85,10 @@ export function HeroSection() {
             className="font-display text-[clamp(3rem,12vw,12rem)] leading-[0.85] uppercase tracking-tight text-foreground"
             style={{
               opacity: mounted ? 1 : 0,
-              animation: mounted
-                ? "reveal-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards"
-                : "none",
+              animationName: mounted ? "reveal-up" : "none",
+              animationDuration: "0.8s",
+              animationTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
+              animationFillMode: "forwards",
               animationDelay: "0.65s",
             }}
           >
@@ -95,7 +100,10 @@ export function HeroSection() {
             className="font-mono text-sm text-muted-foreground max-w-md leading-relaxed"
             style={{
               opacity: mounted ? 1 : 0,
-              animation: mounted ? "fade-in 0.6s ease forwards" : "none",
+              animationName: mounted ? "fade-in" : "none",
+              animationDuration: "0.6s",
+              animationTimingFunction: "ease",
+              animationFillMode: "forwards",
               animationDelay: "1s",
             }}
           >
@@ -108,7 +116,10 @@ export function HeroSection() {
             className="flex gap-1 font-mono text-xs text-muted-foreground"
             style={{
               opacity: mounted ? 1 : 0,
-              animation: mounted ? "fade-in 0.6s ease forwards" : "none",
+              animationName: mounted ? "fade-in" : "none",
+              animationDuration: "0.6s",
+              animationTimingFunction: "ease",
+              animationFillMode: "forwards",
               animationDelay: "1.1s",
             }}
           >
@@ -129,9 +140,10 @@ export function HeroSection() {
             className="group border border-border p-6 flex flex-col gap-4 hover:bg-primary hover:border-primary transition-all duration-300"
             style={{
               opacity: mounted ? 1 : 0,
-              animation: mounted
-                ? "slide-in-right 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards"
-                : "none",
+              animationName: mounted ? "slide-in-right" : "none",
+              animationDuration: "0.6s",
+              animationTimingFunction: "cubic-bezier(0.16, 1, 0.3, 1)",
+              animationFillMode: "forwards",
               animationDelay: `${1.2 + i * 0.1}s`,
             }}
           >
@@ -151,7 +163,10 @@ export function HeroSection() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
         style={{
           opacity: mounted ? 1 : 0,
-          animation: mounted ? "fade-in 0.6s ease forwards" : "none",
+          animationName: mounted ? "fade-in" : "none",
+          animationDuration: "0.6s",
+          animationTimingFunction: "ease",
+          animationFillMode: "forwards",
           animationDelay: "1.8s",
         }}
       >

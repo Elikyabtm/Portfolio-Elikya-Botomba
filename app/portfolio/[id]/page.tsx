@@ -68,7 +68,7 @@ export default async function ProjectPage({
               href="/about"
               className="font-mono text-xs text-muted-foreground hover:text-primary tracking-widest uppercase transition-colors"
             >
-              A propos
+              À propos
             </Link>
           </nav>
         </div>
@@ -139,7 +139,7 @@ export default async function ProjectPage({
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           <div>
             <span className="font-mono text-xs text-primary tracking-widest uppercase">
-              Le Defi
+              Le Défi
             </span>
             <p className="font-sans text-lg md:text-xl text-foreground leading-relaxed mt-4">
               {project.challenge}
