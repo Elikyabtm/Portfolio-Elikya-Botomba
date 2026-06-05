@@ -15,8 +15,8 @@ export async function POST(request: Request) {
     }
 
     const { error } = await resend.emails.send({
-      from: "Portfolio <onboarding@resend.dev>", // à remplacer par ton domaine vérifié
-      to: ["elikyabotomba@gmail.com"],            // ← ton adresse email
+      from: "Portfolio <onboarding@resend.dev>",
+      to: ["elikya.botomba@gmail.com"],
       replyTo: email,
       subject: subject
         ? `[Portfolio] ${subject}`
