@@ -33,9 +33,9 @@ export const projects: Project[] = [
     role: "Illustratrice",
     tools: ["Photoshop", "Procreate"],
     challenge:
-      "Capturer l'essence et la personnalité de différents visages à travers une série de portraits illustrés avec un style hachure à l'encre.",
+      "Représenter des personnes que la société marginalise ou fait se sentir jugées et d'explorer comment ce regard extérieur peut amener quelqu'un à avoir peur de sa propre image.",
     description:
-      "Une série de 7 portraits digitaux realisés avec une technique de hachures croisées. Chaque illustration explore les jeux de lumiere, les textures de peau et les expressions, en combinant un trait brut à l'encre avec des aplats de couleur numeriques.",
+      "Scared of My Own Image est une série de portraits illustrés qui met en lumière des personnes souvent invisibilisées ou stigmatisées : femmes voilées, personnes albinos, personnes chauves, silhouettes qui sortent des normes esthétiques dominantes. Chaque portrait est réalisé à la technique des hachures croisées, un trait brut et répétitif qui structure le visage, sauf les yeux, volontairement hachurés. Ce détail n'est pas anodin : il traduit l'idée de ne pas vouloir être vu, de se cacher derrière son propre regard, d'avoir peur de ce que le monde voit quand il vous regarde. La série interroge la norme, le jugement et la relation intime qu'on entretient avec son propre reflet.",
     thumbnailColor: "#F2F2F2",
     thumbnail: "/images/portraits/portraits1.webp",
     images: [
@@ -55,12 +55,14 @@ export const projects: Project[] = [
     year: "2025",
     role: "Motion Designer",
     tools: ["After Effects", "Premiere Pro", "Photoshop"],
-    challenge: "Réaliser une courte publicité video (Social Ad) pour la marque NOCTA, destinée aux réseaux sociaux (Snapchat, Instagram, Youtube).",
-    description: "Une publicité dynamique et percutante pour la marque NOCTA. Le format Social Ad impose un rythme rapide, des visuels forts et un message clair en quelques secondes. Le montage joue sur les transitions, la typographie animée et l'énergie de la marque.",
+    challenge:
+      "Réaliser une courte publicité vidéo (Social Ad) pour la marque NOCTA, destinée aux réseaux sociaux (Snapchat, Instagram, YouTube).",
+    description:
+      "Une publicité dynamique et percutante pour la marque NOCTA. Le format Social Ad impose un rythme rapide, des visuels forts et un message clair en quelques secondes. Le montage joue sur les transitions, la typographie animée et l'énergie brute de la marque.",
     thumbnail: "/videos/noctacover.webp",
     video: "/videos/nocta-v2.mp4",
     showImages: false,
-    thumbnailColor: ""
+    thumbnailColor: "",
   },
   {
     id: "03",
@@ -70,9 +72,9 @@ export const projects: Project[] = [
     role: "Illustratrice",
     tools: ["Illustrator"],
     challenge:
-      "Créer des crossovers visuels entre des univers cultes du cinéma et des séries tout en conservant les symboles iconiques qui rendent chaque œuvre immédiatement reconnaissable.",
+      "Créer des crossovers visuels entre des univers cultes du cinéma et des séries, tout en conservant les symboles iconiques qui rendent chaque œuvre immédiatement reconnaissable.",
     description:
-      "Pop Culture Crossroads est une série de stickers illustrés qui fusionne plusieurs univers cultes du cinéma et des séries. Chaque illustration agit comme un pont visuel entre deux mondes de la pop culture, en mélangeant leurs symboles et leurs codes graphiques. Le style repose sur un trait épuré, des formes simplifiées et des palettes de couleurs réduites inspirées des œuvres originales. La série explore la manière dont les imaginaires collectifs peuvent se rencontrer et dialoguer à travers des mashups visuels. Les quatre stickers réalisés sont : Hogwarts in the Upside Down (Poudlard dans le Monde à l'Envers), Mockingjay & Golden Snitch (geai moqueur et Vif d'Or), The Upside Down Express (le panneau de train de King's Cross menant au Monde à l'Envers), et Ghostbuster Demogorgon (le Demogorgon intégré au logo Ghostbusters).",
+      "Pop Culture Crossroads est une série de stickers illustrés qui fusionne plusieurs univers cultes du cinéma et des séries. Chaque illustration fonctionne comme un pont visuel entre deux mondes de la pop culture, en mélangeant leurs symboles et leurs codes graphiques. Le style repose sur un trait épuré, des formes simplifiées et des palettes de couleurs réduites inspirées des œuvres originales. Les quatre stickers réalisés sont : Hogwarts in the Upside Down, Mockingjay & Golden Snitch, The Upside Down Express, et Ghostbuster Demogorgon : autant de mashups qui interrogent la manière dont nos imaginaires collectifs peuvent se croiser et dialoguer.",
     thumbnailColor: "#F2F2F2",
     thumbnail: "/images/stickers/stickers.webp",
     images: [
@@ -91,9 +93,9 @@ export const projects: Project[] = [
     role: "Beatmaker",
     tools: ["FL Studio", "Serum", "Photoshop"],
     challenge:
-      "Composer une série de prods liées à mes émotions du moment, chaque instrumentale étant le reflet brut d'un état d'esprit.",
+      "Composer une série de productions liées à mes émotions du moment chaque instrumentale étant le reflet brut d'un état d'esprit précis.",
     description:
-      "Une collection de 5 productions originales, chacune associée à une cover art unique et une emotion. De 'Not Right' (Vol.1) a 'The End' (Vol.5), chaque morceau capture un sentiment precis : frustration, perte, introspection, errance et acceptation.",
+      "Une collection de 5 productions originales, chacune associée à une cover art unique et à une émotion. De 'Not Right' (Vol.1) à 'The End' (Vol.5), chaque morceau capture un sentiment précis : frustration, perte, introspection, errance et acceptation. Un projet personnel autant que musical, où la composition devient un journal intime sonore.",
     thumbnailColor: "#E60000",
     thumbnail: "/images/prods/covers.webp",
     tracks: [
@@ -112,9 +114,9 @@ export const projects: Project[] = [
     role: "Game Designer & Developer",
     tools: ["HTML", "CSS", "JavaScript", "Illustrator"],
     challenge:
-      "Créer une expérience immersive d’enquête numérique dans laquelle le joueur reconstitue son identité uniquement à partir de traces digitales fragmentées.",
+      "Créer une expérience immersive d'enquête numérique dans laquelle la joueuse reconstitue son identité uniquement à partir de traces digitales fragmentées.",
     description:
-      "Amnesia est un jeu d’enquête interactif qui plonge le joueur dans une interface simulant un système informatique. Privé de mémoire, il doit explorer des e-mails, des fichiers, des photos et divers documents afin de reconstituer progressivement son identité. L’expérience repose sur l’observation, l’analyse et la déduction, en laissant au joueur la liberté d’interpréter les indices disponibles. Chaque élément consulté contribué à construire une narration fragmentée, où plusieurs pistes peuvent coexister avant de révéler la vérité. Le projet explore les notions de mémoire, d’identité et de narration interactive à travers une interface minimaliste inspirée des environnements numériques réels.",
+      "Amnesia est un jeu d'enquête interactif qui plonge la joueuse dans une interface simulant un système informatique. Privée de mémoire, elle doit explorer des e-mails, des fichiers, des photos et divers documents afin de reconstituer progressivement son identité. L'expérience repose sur l'observation, l'analyse et la déduction, en laissant une vraie liberté d'interprétation sur les indices disponibles. Chaque élément consulté contribue à construire une narration fragmentée, où plusieurs pistes coexistent avant que la vérité n'émerge. Le projet explore les notions de mémoire, d'identité et de narration interactive à travers une interface minimaliste inspirée des environnements numériques réels.",
     thumbnailColor: "#1A1A1A",
     thumbnail: "/images/projects/amnesiacover.webp",
     websiteUrl: "https://amnesia-ten.vercel.app/",
@@ -131,9 +133,9 @@ export const projects: Project[] = [
     role: "Motion Designer",
     tools: ["After Effects", "Premiere Pro", "Illustrator"],
     challenge:
-      "Concevoir une video promotionnelle animée pour la marque DOONYS, mettant en valeur l'univers et les produits de la marque.",
+      "Concevoir une vidéo promotionnelle animée pour la marque DOONYS, mettant en valeur l'univers et les produits de la marque.",
     description:
-      "Une animation promotionnelle colorée et énergique pour DOONYS. Le motion design combine typographie animée, transitions fluides et mise en scene des produits pour créer un spot engageant et mémorable.",
+      "Une animation promotionnelle colorée et énergique pour DOONYS. Le motion design combine typographie animée, transitions fluides et mise en scène des produits pour créer un spot engageant et mémorable.",
     thumbnailColor: "#E60000",
     thumbnail: "/videos/doonyscover.webp",
     video: "/videos/doonys.mp4",
@@ -147,9 +149,9 @@ export const projects: Project[] = [
     role: "Illustratrice",
     tools: ["Photoshop", "Procreate"],
     challenge:
-      "Capturer l'essence et la personnalité de différents visages à travers une série de portraits illustrés avec un style hachure à l'encre.",
+      "Continuer d'explorer, avec une nouvelle série de portraits, la relation douloureuse que certaines personnes entretiennent avec leur propre image celle que la société leur renvoie.",
     description:
-      "Une série de 8 portraits digitaux realisés avec une technique de hachures croisées. Chaque illustration explore les jeux de lumiere, les textures de peau et les expressions, en combinant un trait brut à l'encre avec des aplats de couleur numeriques.",
+      "La deuxième partie de la série poursuit le même geste : donner de la visibilité à des personnes que le regard collectif a tendance à effacer, juger ou exotiser. Huit nouveaux portraits, huit nouvelles présences, toujours avec les yeux hachurés, toujours avec ce même trait brut qui à la fois révèle et protège. Parce qu'avoir peur de son image, ce n'est pas une faiblesse, c'est souvent la conséquence directe d'un monde qui ne vous a pas appris à vous voir sans filtre.",
     thumbnailColor: "#F2F2F2",
     thumbnail: "/images/portraits/portraits2.webp",
     images: [
@@ -163,7 +165,6 @@ export const projects: Project[] = [
       "/images/portraits/portrait15.webp",
     ],
   },
-
   {
     id: "08",
     title: "Hawkins Files",
@@ -172,9 +173,9 @@ export const projects: Project[] = [
     role: "UX/UI Designer & Developer",
     tools: ["HTML", "CSS", "JavaScript", "Illustrator"],
     challenge:
-      "Transformer l'univers narratif de Stranger Things en une expérience web interactive permettant aux utilisateurs d'enquêter sur les événements paranormaux survenus à Hawkins.",
+      "Transformer l'univers narratif de Stranger Things en une expérience web interactive permettant aux utilisatrices d'enquêter sur les événements paranormaux survenus à Hawkins.",
     description:
-      "Hawkins Files est une expérience web immersive conçue comme un système d'archives classifiées et un outil d'enquête inspiré de la série Stranger Things. Le projet transforme l'utilisateur en agente chargée d'analyser les anomalies liées a l'Upside Down à travers une interface rappelant les terminaux militaires et les bases de données gouvernementales. Le site propose une carte interactive de Hawkins, des chronologies détaillées couvrant les saisons 1 à 4, ainsi que des dossiers classifiés sur les personnages et les créatures de la série. Les lieux sont catégorisés par niveau de menace (standard, militaire ou paranormal) et chaque interaction permet d'accéder a des informations contextuelles, des événements clés et des documents d'enquête. L'interface sombre, les codes couleurs (vert, orange, rouge) et les animations minimalistes renforcent l'immersion en simulant l'accès à une base de données secrète. Ce projet explore la rencontre entre web design, storytelling interactif et expérience utilisateur narrative.",
+      "Hawkins Files est une expérience web immersive conçue comme un système d'archives classifiées, inspirée de la série Stranger Things. Le projet plonge la visiteuse dans le rôle d'une agente chargée d'analyser les anomalies liées à l'Upside Down, à travers une interface évoquant les terminaux militaires et les bases de données gouvernementales. Le site propose une carte interactive de Hawkins, des chronologies détaillées couvrant les saisons 1 à 4, ainsi que des dossiers classifiés sur les personnages et les créatures de la série. Les lieux sont catégorisés par niveau de menace et chaque interaction donne accès à des documents d'enquête contextuels. L'interface sombre, les codes couleurs (vert, orange, rouge) et les animations minimalistes renforcent l'immersion en simulant l'accès à une base de données secrète.",
     thumbnailColor: "#1A1A1A",
     thumbnail: "/images/projects/hawkinsfilescover.webp",
     websiteUrl: "https://hawkinsfiles.vercel.app/",
@@ -192,9 +193,9 @@ export const projects: Project[] = [
     role: "UX/UI Designer & Developer",
     tools: ["Figma", "HTML", "CSS", "JavaScript"],
     challenge:
-      "Transformer un articlé editorial sur l'histoire de la couleur des hyperliens en une expérience mobile interactive capable de rendre un sujet technique accessible, engageant et mémorable.",
+      "Transformer un article éditorial sur l'histoire de la couleur des hyperliens en une expérience mobile interactive capable de rendre un sujet technique accessible, engageant et mémorable.",
     description:
-      "Why Are Hyperlinks Blue? est une expérience interactive de type scrollytelling conçue pour mobile. Le projet adapte un article sur l'origine et l'évolution de la couleur des hyperliens en une narration visuelle et interactive. L'interface guide l'utilisateur à travers l'histoire du web, depuis les premiers concepts d'hypertexte comme le projet Xanadu jusqu'aux navigateurs des années 1990 qui ont popularisé les liens bleus. L'expérience combine textes courts, cartes interactives, mini-tests et éléments visuels afin de rendre un sujet technique plus accessible et immersif. Le design repose sur une direction artistique minimaliste dominée par le bleu, rappelant la couleur historique des hyperliens. Ce choix fait écho à l'histoire du navigateur Mosaic qui, en 1993, a largement popularisé les liens bleus et contribué à en faire un standard visuel du web.",
+      "Why Are Hyperlinks Blue? est une expérience de type scrollytelling conçue pour mobile. Le projet adapte un article sur l'origine et l'évolution de la couleur des hyperliens en une narration visuelle et interactive. L'interface guide la lectrice à travers l'histoire du web, depuis les premiers concepts d'hypertexte comme le projet Xanadu jusqu'aux navigateurs des années 1990 qui ont popularisé les liens bleus. Textes courts, cartes interactives, mini-tests et éléments visuels se combinent pour rendre un sujet technique réellement immersif. Le design repose sur une direction artistique minimaliste dominée par le bleu, couleur historique des hyperliens, popularisée par le navigateur Mosaic en 1993.",
     thumbnailColor: "#0551C1",
     thumbnail: "/images/projects/hyperlink-cover.webp",
     images: [
@@ -211,12 +212,12 @@ export const projects: Project[] = [
     title: "Ce que la mer rend",
     category: "digital",
     year: "2025",
-    role: "Writter & Developer",
+    role: "Autrice & Développeuse",
     tools: ["HTML", "CSS", "JavaScript", "Illustrator"],
     challenge:
-      "Concevoir un site littéraire immersif capable de traduire l’atmosphère d’un roman médiéval-fantastique en une expérience de lecture sensible, cinématique et interactive.",
+      "Concevoir un site littéraire immersif capable de traduire l'atmosphère d'un roman médiéval-fantastique en une expérience de lecture sensible, cinématique et interactive.",
     description:
-      "Ce que la mer rend est un site littéraire immersif imaginé pour accompagner mon roman du même nom, une fiction médiévale-fantastique située sur l’île sauvage de Brunehame. Le projet plonge le visiteur dans un univers battu par les vents, entre falaises sombres, brume marine et lumières d’ambre, à travers une direction artistique évocatrice et une navigation pensée comme une expérience de lecture. Le site présente les personnages principaux, Edrin et Alma, met en scène un herbier interactif lié à l’univers du récit, et propose un curseur thématique explorant l’équilibre entre destruction et réparation. Une table des matières complète permet également d’accéder aux chapitres du roman, générés automatiquement depuis le fichier source, avec une lecture fluide et une navigation entre les pages. Le projet mêle narration, atmosphère visuelle et interaction pour transformer l’univers littéraire en expérience web sensible et immersive.",
+      "Ce que la mer rend est un site littéraire immersif conçu pour accompagner mon roman du même nom, une fiction médiévale-fantastique située sur l'île sauvage de Brunehame. Le projet plonge la visiteuse dans un univers battu par les vents, entre falaises sombres, brume marine et lumières d'ambre, à travers une direction artistique évocatrice et une navigation pensée comme une expérience de lecture à part entière. Le site présente les personnages principaux, met en scène un herbier interactif lié à l'univers du récit, et donne accès aux chapitres du roman via une table des matières générée automatiquement depuis le fichier source. Narration, atmosphère visuelle et interaction s'y mêlent pour transformer un univers littéraire en expérience web sensible.",
     thumbnailColor: "#1A1A1A",
     thumbnail: "/images/projects/cequelamerrendcover.webp",
     websiteUrl: "https://cequelamerrend.vercel.app/",
@@ -234,9 +235,9 @@ export const projects: Project[] = [
     role: "UX/UI Designer & Developer",
     tools: ["Figma", "HTML", "CSS", "JavaScript"],
     challenge:
-      "Concevoir une application géolocalisée inclusive permettant aux personnes neurodivergentes d’anticiper les stimulations sensorielles de leur environnement et de se déplacer en ville de manière plus sereine.",
+      "Concevoir une application géolocalisée inclusive permettant aux personnes neurodivergentes d'anticiper les stimulations sensorielles de leur environnement et de se déplacer en ville de manière plus sereine.",
     description:
-      "Nuance est une application sociale et géolocalisée pensée pour accompagner les personnes neurodivergentes dans leur exploration de l’espace urbain. Le projet propose une carte sensorielle interactive qui permet d’identifier l’intensité de différents facteurs comme le bruit, la luminosité ou l’affluence. L’utilisateur peut découvrir des lieux adaptés à ses besoins, appelés « sensory friendly », et accéder à des informations contextualisées pour anticiper son expérience. L’application intègre également une dimension communautaire forte avec le partage d’avis, de recommandations et de sorties collectives. Chaque profil est personnalisable selon les sensibilités de l’utilisateur, afin d’offrir une expérience adaptée et inclusive. Nuance vise à rendre la ville plus lisible, prévisible et accessible, tout en créant un espace de soutien et de lien social autour des expériences sensorielles.",
+      "Nuance est une application sociale et géolocalisée pensée pour accompagner les personnes neurodivergentes dans leur exploration de l'espace urbain. Une carte sensorielle interactive permet d'identifier l'intensité de différents facteurs comme le bruit, la luminosité ou l'affluence, et de repérer des lieux « sensory friendly » adaptés à ses besoins. L'application intègre une dimension communautaire forte : partage d'avis, recommandations, sorties collectives. Chaque profil est personnalisable selon les sensibilités de chacune, pour une expérience vraiment adaptée. Nuance vise à rendre la ville plus lisible, plus prévisible et plus accessible, tout en créant un espace de soutien autour des expériences sensorielles.",
     thumbnailColor: "#0551C1",
     thumbnail: "/images/projects/nuancecover.webp",
     images: [
@@ -255,9 +256,9 @@ export const projects: Project[] = [
     role: "Motion Designer",
     tools: ["After Effects", "Photoshop"],
     challenge:
-      "Concevoir une vidéo explicative ou “explainer video” sur le thème de l’anecdote/histoire.",
+      "Concevoir une vidéo explicative sur le thème de l'anecdote médicale pour rendre accessible un savoir complexe grâce au motion design.",
     description:
-      "Une vidéo ayant pour objectif principal la pédagogie et doit utiliser toute la palette d’outils du motion design afin de rendre accessible un savoir que vous pourrez au choix synthétiser et vulgariser ou au contraire en développer la complexité.",
+      "Une vidéo pédagogique qui utilise toute la palette du motion design pour vulgariser l'épiphysiolyse, une pathologie de la hanche touchant principalement les adolescents. L'objectif : rendre un sujet médical clair, engageant et mémorable, sans jamais sacrifier la rigueur à l'entertainment.",
     thumbnailColor: "#E60000",
     thumbnail: "/videos/epiphysiolysecover.webp",
     video: "/videos/explicative.mp4",
@@ -271,9 +272,9 @@ export const projects: Project[] = [
     role: "Graphiste",
     tools: ["Illustrator", "Photoshop"],
     challenge:
-      "Réinterpréter des œuvres classiques de Georges de La Tour à travers une esthétique brutaliste contemporaine, en créant un contraste visuel fort entre la finesse du clair-obscur baroque et un traitement graphique radical.",
+      "Réinterpréter des œuvres classiques de Georges de La Tour à travers une esthétique brutaliste contemporaine et de créer un choc visuel entre la finesse du clair-obscur baroque et un traitement graphique radical.",
     description:
-      "Cette série de trois posters revisite des tableaux de Georges de La Tour en les transformant en affiches brutalistes contemporaines. Le projet mélange art classique et design graphique en adoptant un langage visuel volontairement radical. Les compositions reposent sur une palette bicolore rouge et noir inspirée de l’esthétique protest punk et de l’impression sérigraphique. Les images sont traitées en aplats granuleux proches de la photocopie, avec des textures brutes rappelant les fanzines DIY et les impressions artisanales. Des textures de papier froissé renforcent l’aspect d’objet imprimé, presque clandestin. La direction typographique utilise des blocs massifs et des alignements stricts, caractéristiques du brutalisme graphique, combinés à une mise en page éditoriale mêlant titre impactant, cartouche descriptif et composition muséale revisitée. La série crée ainsi un dialogue visuel entre l’histoire de l’art et les codes du design contemporain.",
+      "Cette série de trois posters revisite des tableaux de Georges de La Tour en les transformant en affiches brutalistes contemporaines. Palette bicolore rouge et noir inspirée du protest punk, images traitées en aplats granuleux proches de la photocopie, textures de papier froissé, typographies massives en blocs stricts : tout le vocabulaire du brutalisme graphique est convoqué pour entrer en collision avec la douceur du clair-obscur baroque. Le résultat crée un dialogue inattendu entre histoire de l'art et design contemporain, entre le musée et le fanzine.",
     thumbnailColor: "#1A1A1A",
     thumbnail: "/images/posters/delatour.webp",
     images: [
@@ -290,9 +291,9 @@ export const projects: Project[] = [
     role: "Graphic Designer & Developer",
     tools: ["HTML", "CSS", "JavaScript", "Illustrator"],
     challenge:
-      "Concevoir une carte vectorielle interactive capable de représenter de manière claire, structurée et accessible les lieux emblématiques de l’univers de Harry Potter dans un format immersif et muséal.",
+      "Concevoir une carte vectorielle interactive représentant de façon claire, structurée et immersive les lieux emblématiques de l'univers de Harry Potter.",
     description:
-      "HarryPotterLand est une carte interactive inspirée de l’univers de Harry Potter, pensée comme un support de médiation visuelle et narrative. Le projet associe une conception graphique vectorielle réalisée sur Illustrator à un travail de postproduction visuelle et de mise en interaction via des outils de prototypage et de développement web. L’objectif est de proposer une lecture claire et attractive des lieux emblématiques de la saga, dans une forme adaptée à une exposition interactive. Chaque zone de la carte est enrichie par des pop-ups dynamiques déclénchés au clic, donnant accès à des informations contextuelles sur les bâtiments, les personnages notables qui les fréquentent ainsi que les événements marquants qui s’y déroulent. Le projet mêle cartographie illustrée, design d’interface et narration interactive pour transformer un univers fictionnel en expérience exploratoire accessible et engageante.",
+      "HarryPotterLand est une carte interactive inspirée de l'univers de Harry Potter, pensée comme un support de médiation visuelle et narrative. Conçue sur Illustrator puis mise en interaction via le développement web, elle propose une lecture claire et attractive des lieux emblématiques de la saga. Chaque zone de la carte est enrichie de pop-ups dynamiques déclenchés au clic, donnant accès à des informations sur les bâtiments, les personnages et les événements marquants qui s'y déroulent. Cartographie illustrée, design d'interface et narration interactive se combinent pour transformer un univers fictionnel en expérience exploratoire.",
     thumbnailColor: "#1A1A1A",
     thumbnail: "/images/projects/harrypotterland.webp",
     websiteUrl: "https://elikyabtm.github.io/Harrypotterland/",
@@ -307,12 +308,12 @@ export const projects: Project[] = [
     title: "Série Brutaliste - Posters Manga",
     category: "visuals",
     year: "2024",
-    role: "Graphiste / Illustratrice",
+    role: "Graphiste & Illustratrice",
     tools: ["Illustrator", "Photoshop"],
     challenge:
-      "Réinterpréter des personnages emblématiques d’anime à travers une esthétique brutaliste contemporaine, en combinant les codes graphiques du manga avec une direction artistique éditoriale forte.",
+      "Réinterpréter des personnages emblématiques d'anime à travers une esthétique brutaliste contemporaine, en fusionnant les codes graphiques du manga avec une direction artistique éditoriale forte.",
     description:
-      "Posters Manga – Série Brutaliste est une série d’affiches graphiques qui fusionne l’esthétique visuelle du manga avec les principes du design brutaliste. Chaque poster revisite un personnage emblématique d’anime en explorant son identité, son énergie et sa dualité à travers une composition graphique marquée. La direction artistique repose sur des typographies massives, des grilles géométriques apparentes inspirées de la mise en page éditoriale, ainsi que des textures brutes comme le papier froissé, le grain ou la trame d’impression. Les contrastes extrêmes évoquent l’univers des fanzines et des impressions DIY, tandis que le découpage en cases rappelle la narration visuelle du manga. Chaque affiche utilise une couleur dominante associée au personnage afin de créer une série cohérente tout en conservant une identité visuelle propre à chaque protagoniste.",
+      "Posters Manga – Série Brutaliste est une série d'affiches qui fusionne l'esthétique visuelle du manga avec les principes du design brutaliste. Chaque poster revisite un personnage emblématique d'anime à travers sa dualité, son énergie et son identité : typographies massives, grilles géométriques apparentes, textures brutes de papier froissé et découpages en cases rappelant la narration visuelle du manga. Chaque affiche adopte une couleur dominante associée au personnage, créant une série cohérente où chaque protagoniste garde pourtant une identité visuelle qui lui est propre.",
     thumbnailColor: "#EDEDED",
     thumbnail: "/images/posters/mangas.webp",
     images: [
@@ -334,9 +335,9 @@ export const projects: Project[] = [
     challenge:
       "Transformer l'autorité historique du Guide Michelin en un réflexe de consommation spontané et visuel pour la génération 25-30 ans.",
     description:
-      "Michelin Escapade est un concept d'application mobile imaginé pour réinventer l'expérience du Guide Michelin à destination d'un public jeune et connecté. Le projet repense les codes traditionnels du guide gastronomique à travers une approche immersive, inspirée des usages des réseaux sociaux et des plateformes de contenu vertical. L'interface repose sur un scroll infini mêlant recommandations culinaires, destinations et expériences lifestyle dans un format visuel dynamique et spontané. Un onboarding personnalisé permet d'adapter les suggestions selon les habitudes, envies et styles de vie de chaque utilisateur afin de proposer une expérience sur mesure. Le concept introduit également des packages simplifiés combinant hôtel et restaurant en une seule réservation, afin de fluidifier l'organisation des escapades. Entre inspiration voyage, découverte culinaire et expérience premium, Michelin Escapade transforme le Guide Michelin en un compagnon de sortie intuitif, immersif et adapté aux nouveaux réflexes de consommation.",
+      "Michelin Escapade est un concept d'application mobile imaginé pour réinventer l'expérience du Guide Michelin à destination d'un public jeune et connecté. Le projet repense les codes traditionnels du guide gastronomique à travers une approche immersive, inspirée des usages des réseaux sociaux et des plateformes de contenu vertical. Scroll infini mêlant recommandations culinaires et destinations, onboarding personnalisé selon les habitudes de chacune, packages combinant hôtel et restaurant en une seule réservation. Michelin Escapade transforme le Guide en compagnon de sortie intuitif, adapté aux nouveaux réflexes de consommation.",
     thumbnailColor: "#0551C1",
-    thumbnail: "/images/projects/mockup.webp",
+    thumbnail: "/images/projects/Mockup.webp",
     images: [
       "/images/projects/mockup.webp",
       "/images/projects/mockup 2.webp",
@@ -367,9 +368,7 @@ export function getProjectById(id: string): Project | undefined {
   return projects.find((p) => p.id === id)
 }
 
-export function getProjectsByCategory(
-  category: string
-): Project[] {
+export function getProjectsByCategory(category: string): Project[] {
   if (category === "all") return projects
   return projects.filter((p) => p.category === category)
 }
