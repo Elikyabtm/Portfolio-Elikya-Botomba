@@ -123,7 +123,7 @@ export function HeroSection() {
               animationDelay: "1.1s",
             }}
           >
-            <span>{"Bas\u00e9 \u00e0 Paris, FR"}</span>
+            <span>{"Basée à Paris, FR"}</span>
             <span className="text-primary mx-2">/</span>
             <span>Disponible</span>
           </div>

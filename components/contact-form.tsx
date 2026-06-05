@@ -3,6 +3,8 @@
 import { useState } from "react"
 import { ArrowUpRight } from "lucide-react"
 
+type Status = "idle" | "loading" | "success" | "error"
+
 export function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
@@ -10,25 +12,48 @@ export function ContactForm() {
     subject: "",
     message: "",
   })
-  const [submitted, setSubmitted] = useState(false)
+  const [status, setStatus] = useState<Status>("idle")
+  const [errorMessage, setErrorMessage] = useState("")
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    setSubmitted(true)
+    setStatus("loading")
+    setErrorMessage("")
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await res.json()
+
+      if (!res.ok) {
+        setErrorMessage(data.error || "Une erreur est survenue.")
+        setStatus("error")
+        return
+      }
+
+      setStatus("success")
+    } catch {
+      setErrorMessage("Impossible d'envoyer le message. Vérifie ta connexion.")
+      setStatus("error")
+    }
   }
 
-  if (submitted) {
+  if (status === "success") {
     return (
       <div className="flex flex-col items-center justify-center border border-primary p-12">
         <span className="font-display text-4xl md:text-6xl text-primary uppercase">
           {"ENVOY\u00c9."}
         </span>
         <p className="font-mono text-xs text-muted-foreground mt-4 text-center tracking-widest uppercase">
-          {"Je vous recontacte tres vite."}
+          {"Je te recontacte tr\u00e8s vite."}
         </p>
         <button
           onClick={() => {
-            setSubmitted(false)
+            setStatus("idle")
             setFormData({ name: "", email: "", subject: "", message: "" })
           }}
           className="font-mono text-xs text-muted-foreground hover:text-primary transition-colors mt-8 tracking-widest uppercase"
@@ -47,7 +72,10 @@ export function ContactForm() {
 
       {/* Name */}
       <div className="flex flex-col gap-2">
-        <label htmlFor="name" className="font-mono text-[10px] text-muted-foreground tracking-widest uppercase">
+        <label
+          htmlFor="name"
+          className="font-mono text-[10px] text-muted-foreground tracking-widest uppercase"
+        >
           Nom *
         </label>
         <input
@@ -57,13 +85,16 @@ export function ContactForm() {
           value={formData.name}
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
           className="bg-secondary border border-border p-4 font-sans text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-primary focus:outline-none transition-colors"
-          placeholder="Votre nom"
+          placeholder="Ton nom"
         />
       </div>
 
       {/* Email */}
       <div className="flex flex-col gap-2">
-        <label htmlFor="email" className="font-mono text-[10px] text-muted-foreground tracking-widest uppercase">
+        <label
+          htmlFor="email"
+          className="font-mono text-[10px] text-muted-foreground tracking-widest uppercase"
+        >
           E-mail *
         </label>
         <input
@@ -79,14 +110,19 @@ export function ContactForm() {
 
       {/* Subject */}
       <div className="flex flex-col gap-2">
-        <label htmlFor="subject" className="font-mono text-[10px] text-muted-foreground tracking-widest uppercase">
+        <label
+          htmlFor="subject"
+          className="font-mono text-[10px] text-muted-foreground tracking-widest uppercase"
+        >
           Sujet
         </label>
         <input
           id="subject"
           type="text"
           value={formData.subject}
-          onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+          onChange={(e) =>
+            setFormData({ ...formData, subject: e.target.value })
+          }
           className="bg-secondary border border-border p-4 font-sans text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-primary focus:outline-none transition-colors"
           placeholder="Collaboration, freelance, etc."
         />
@@ -94,7 +130,10 @@ export function ContactForm() {
 
       {/* Message */}
       <div className="flex flex-col gap-2">
-        <label htmlFor="message" className="font-mono text-[10px] text-muted-foreground tracking-widest uppercase">
+        <label
+          htmlFor="message"
+          className="font-mono text-[10px] text-muted-foreground tracking-widest uppercase"
+        >
           Message *
         </label>
         <textarea
@@ -102,26 +141,36 @@ export function ContactForm() {
           required
           rows={6}
           value={formData.message}
-          onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+          onChange={(e) =>
+            setFormData({ ...formData, message: e.target.value })
+          }
           className="bg-secondary border border-border p-4 font-sans text-sm text-foreground placeholder:text-muted-foreground/50 focus:border-primary focus:outline-none transition-colors resize-none"
-          placeholder="Parlez-moi de votre projet..."
+          placeholder="Parle-moi de ton projet..."
         />
       </div>
+
+      {/* Erreur */}
+      {status === "error" && (
+        <p className="font-mono text-xs text-red-500 tracking-widest">
+          ⚠ {errorMessage}
+        </p>
+      )}
 
       {/* Submit */}
       <button
         type="submit"
-        data-cursor="Envoyer"
-        className="group flex items-center justify-between border border-foreground p-6 hover:bg-primary hover:border-primary transition-all duration-300 mt-4"
+        disabled={status === "loading"}
+        data-cursor="ENVOYER"
+        className="group flex items-center justify-between border border-foreground p-6 hover:bg-primary hover:border-primary transition-all duration-300 mt-4 disabled:opacity-50 disabled:cursor-not-allowed"
       >
         <span className="font-display text-2xl uppercase text-foreground group-hover:text-primary-foreground transition-colors">
-          ENVOYER
+          {status === "loading" ? "ENVOI..." : "ENVOYER"}
         </span>
         <ArrowUpRight className="w-6 h-6 text-foreground group-hover:text-primary-foreground transition-colors" />
       </button>
 
       <p className="font-mono text-[10px] text-muted-foreground/50 tracking-widest">
-        {"/* Les champs marques d'un * sont obligatoires */"}
+        {"/* Les champs marqu\u00e9s d'un * sont obligatoires */"}
       </p>
     </form>
   )
