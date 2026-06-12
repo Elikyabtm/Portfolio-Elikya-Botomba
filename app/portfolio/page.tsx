@@ -48,9 +48,7 @@ export default async function PortfolioPage({
             Travaux choisis
           </span>
           <h1 className="font-display text-6xl md:text-8xl lg:text-[10rem] uppercase text-foreground leading-[0.85] mt-4">
-            PORT
-            <br />
-            FOLIO
+            PORTFOLIO
           </h1>
         </div>
 

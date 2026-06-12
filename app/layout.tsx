@@ -21,7 +21,7 @@ const anton = Anton({
 })
 
 export const metadata: Metadata = {
-  title: 'ELIKYA BOTOMBA | Web Designer & Creative Polymath',
+  title: 'ELIKYA BOTOMBA | Web Designer',
   description: 'Portfolio of Elikya Botomba - Web Designer, Motion Designer, Beatmaker & Creative Developer.',
 }
 

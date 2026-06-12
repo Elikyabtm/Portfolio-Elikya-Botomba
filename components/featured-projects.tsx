@@ -11,7 +11,7 @@ const projects = [
     category: "DIGITAL",
     year: "2025",
     description:
-      "Experience web immersive concue comme un systeme d'archives classifiees inspire de Stranger Things.",
+      "Expérience web immersive conçue comme un système d'archives classifiées, inspirée de la série Stranger Things.",
     thumbnail: "/images/projects/hawkinsfilescover.webp",
     color: "#1a1a2e",
   },

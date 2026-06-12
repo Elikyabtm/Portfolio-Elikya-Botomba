@@ -40,8 +40,8 @@ export const projects: Project[] = [
     thumbnailColor: "#0551C1",
     thumbnail: "/images/projects/Mockup.webp",
     images: [
-      "/images/projects/mockup.webp",
-      "/images/projects/mockup 2.webp",
+      "/images/projects/Mockup.webp",
+      "/images/projects/Mockup 2.webp",
       "/images/projects/Colors.webp",
       "/images/projects/Typography.webp",
       "/images/projects/Grid.webp",
